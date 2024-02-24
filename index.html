@@ -1,0 +1,147 @@
+---
+layout: default 
+title: Homepage
+seo: 
+ title: This should appear in the browser tab
+ description: 
+ keywords: 
+ social_image: 
+ hide-from-google: true
+---
+
+<!--------Header Banner----------->
+
+<section class="md:grid md:grid-cols-2 justify-center items-center bg-[#F0F0F0]">
+    
+    
+    <div class="md:hidden h-full flex items-center justify-center"> 
+        <img src="/images/veraenderung.png" alt="" class="object-cover h-full"> 
+    </div>
+
+
+    <div class="hidden md:flex col-span-1 h-full items-center justify-center" style="background-image: url('/images/veraenderung.png'); background-position: 71% 50%; background-size: cover;">
+    </div>
+
+
+	<div class="text-center pt-5p sm:px-5p pb-10p">
+		<h3 class="font-black text-[2.5rem] sm:text-6xl md:text-5xl pt-10 pb-3p 2xl:pt-10p"> Zeit für Veränderung. </h3>
+           <h4 class="text-2xl sm:text-4xl font-black pb-10p"> Fangen Sie heute damit an. </h4>
+		<h1 class="text-xl sm:text-2xl pt-0 pb-10p sm:pb-5p md:pb-10p"> Coachings, Beratungen, Workshops </h1>
+		
+		<a href="/contact.html" class="button"> Jetzt Termin vereinbaren! </a>
+	</div>
+</section>
+
+
+<!-------------Kennst du das------------------->
+
+<section class="p-5p">
+
+    <div class="pt-5p sm:pt-0 sm:grid sm:grid-cols-2 sm:gap-5">
+
+        <!-- Left Image -->
+        <div class="bg-cover bg-center min-h-30  relative" style="background-image:url(/images/kennst-du-das.png)">
+        </div>
+
+        <!-- Right Text -->
+        <div class="relative py-5p sm:pt-0 sm:pb-0 md:pl-5p">
+            <div>
+                <p class="text-2xl sm:text-4xl p-5p font-black text-center"> Kennen Sie das? </p>
+                <h2 class="text-xl sm:text-2xl font-bold pb-5p"> Sie entscheiden, dass Sie etwas verändern möchten. </h2>
+                <p class="pb-3p"> Dann: </p>
+                <div>
+                    <p>  "Ich mach das hier noch schnell zu Ende." </p>
+                    <p>  "Das mache ich nachher." </p>
+                    <p> "Da rufe ich morgen an." </p>
+                </div>
+                <p class="text-xl sm:text-2xl font-bold pt-5p"> Plötzlich ist ein Monat vergangen, ohne dass Sie Ihren Veränderungswunsch umgesetzt haben. </p>
+            </div>
+        </div>
+
+        
+
+    </div>
+
+</section>
+
+<!-------------Möchtest du herausfinden------------------->
+
+<section class="p-5p bg-[#F0F0F0]">
+
+    <div class="sm:grid sm:grid-cols-2 md:gap-5 xl:justify-center xl:items-center">
+
+        
+
+        <!-- left Text Content -->
+        <div class="relative pt-5p">
+            <div>
+                <h2 class="text-xl sm:text-2xl font-bold pb-5p "> Möchten Sie herausfinden: </h2>
+                <div class="sm:pr-15p">
+                    <p class="flex items-center pb-2"> <i class="fa-regular fa-circle-check mr-2 "></i> Was Sie wirklich wollen? </p>
+                    <p class="flex items-center pb-2"> <i class="fa-regular fa-circle-check mr-2 "></i> Wie Sie in die Handlung kommen? </p>
+                    <p class="flex items-center pb-2"> <i class="fa-regular fa-circle-check mr-2 "></i> Was Sie hindert, das zu machen, was Sie machen wollen? </p>
+                    <p class="flex items-center "> <i class="fa-regular fa-circle-check mr-2 "></i> Welcher Weg der richtige für Sie ist? </p>
+                </div>
+                <div class="text-xl sm:text-2xl font-bold pt-5p ">
+                    <p class="pb-3p"> Ich unterstütze Sie dabei, Ihre eigenen Antworten auf diese Fragen zu finden. </p>
+                    <p class="pb-5p sm:pb-0"> Kommen Sie jetzt in die Umsetzung. </p>
+                </div>
+                
+            </div>
+        </div>
+
+        
+
+        <!-- Right Image -->
+        <div class="hidden sm:block bg-cover min-h-40 xl:min-h-50 relative 2xl:bg-center" style="background-image:url(/images/verstehen.png)"></div>
+
+    </div>
+
+</section>
+
+<div class="text-center pb-10p sm:pb-5p bg-[#F0F0F0]">
+    <a href="/contact.html" class="button"> Jetzt Termin vereinbaren! </a>
+</div>
+
+<!-------------Services------------------->
+
+<section class="text-center px-5p py-10p sm:py-5p grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+    <!-- Beratung & Coaching -->
+    <a href="leistungen.html#coaching" class="col-span-1 card bg-cover bg-center min-h-30 sm:min-h-40" style="background-image:url('/images/coaching-und-beratung.png');">
+        <div class="p-5p h-full flex flex-col justify-between">
+            <h3 class="text-2xl sm:text-4xl p-5p font-black"> Coaching & Beratung </h3>
+            <p class="sm:px-10p"> Die Coachings & Beratungen sind ganz individuell auf Sie ausgerichtet.  </p>
+        </div>
+    </a>
+
+    <!-- Workshop -->
+    <a href="leistungen.html#workshop" class="col-span-1 card bg-cover bg-center min-h-30 sm:min-h-40" style="background-image:url('/images/workshop-sabrina.png');">
+        <div class="p-5p h-full flex flex-col justify-between">
+            <h3 class="text-2xl sm:text-4xl font-black p-5p"> Workshops </h3>
+            <p class="sm:px-10p"> Für Gruppen können Workshops zu verschiedenen Themen gebucht werden.  </p>
+        </div>
+    </a>
+
+</section>
+
+
+<!-------------Testimonials------------------->
+
+{% include testimonials.html %}
+
+
+<!-------------CTA Button------------------->
+
+<div class="py-10p sm:py-5p sm:pr-5p sm:pl-5p text-center">
+
+	<p class="text-xl sm:text-2xl font-bold pb-3p text-center"> Reservieren Sie jetzt Ihr Vorgespräch! </p>
+	<p class="pl-5p sm:pl-0 pr-5p sm:pr-0  pb-1p"> In einem ersten kurzen, kostenfreien Telefonat können wir schauen, ob die Chemie für uns beide stimmt. </p>
+	<p class="pl-5p sm:pl-0 pr-5p sm:pr-0  pb-1p"> Ich beantworte erste Fragen, auch über das weitere Vorgehen. </p>
+	<p class="pl-5p sm:pl-0 pr-5p sm:pr-0  pb-5p"> Wenn wir beide glauben, das passt, vereinbaren wir ganz individuell einen ersten Termin.  </p>
+
+	<div class="text-center">
+		<a href="/contact.html" class="button"> Jetzt Termin vereinbaren! </a>
+	</div>
+
+</div>

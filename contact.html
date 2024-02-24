@@ -1,0 +1,158 @@
+---
+layout: default 
+title: Homepage
+seo: 
+ title: This should appear in the browser tab
+ description: 
+ keywords: 
+ social_image: 
+ hide-from-google: true
+---
+
+<!--------Header Banner----------->
+
+<section class="md:grid md:grid-cols-2 justify-center items-center  bg-[#F0F0F0]">
+	
+    <div class="md:hidden h-full flex items-center justify-center"> 
+        <img src="/images/systemische-karte.png" alt="" class="object-cover h-full"> 
+    </div>
+
+
+    <div class="hidden md:flex col-span-1 h-full items-center justify-center" style="background-image: url('/images/systemische-karte.png'); background-position: 25% 50%; background-size: cover;">
+    </div>
+
+	<div class="text-center">
+		<h1 class="font-black text-[2.5rem] sm:text-6xl pt-10p md:pt-25p pb-5p 2xl:pt-15p"> Kontakt </h1>
+		<p class="text-xl sm:text-2xl pb-10p md:pb-15p px-5p "> Sie können mich telefonisch, per Email oder mit Hilfe des untenstehenden Formulars erreichen. </p>
+	</div>
+</section>
+
+<!----------Allgemeine Antworten------->
+
+<section class="px-5p text-center pt-10p sm:pt-5p">
+
+    <p> Die Termine finden über Zoom oder persönlich in Essen statt. </p>
+    
+    <p> Zeitlich können sie ganz individuell gelegt und gestaltet werden, so wie wir gemeinsam den Bedarf sehen. </p>
+    
+    <p> Wenn Sie Fragen haben, scheuen Sie sich bitte nicht, sie zu stellen. </p>
+
+
+</section>
+
+<!--------Telefonisch & Email----------->
+
+<section class="sm:grid grid-cols-5 px-5p pt-10p xl:pt-5p">
+
+    <div class="hidden sm:flex col-span-1 text-right justify-center pt-3p">
+        <i class="fa-solid fa-phone inline-block"></i>
+    </div>
+    <div class="col-span-4 flex flex-col justify-center">
+        <p class="text-2xl sm:text-4xl font-black pb-3p text-center sm:text-left"> Rufen Sie mich an: </p>
+        <p class="text-center sm:text-left"> <a href="tel:00491788278205" class="border-b-2 items-center "> +49 178 827 820 5 </a>  </p>
+        <p class="pt-3p"> Sollten Sie mich nicht direkt erreichen können, hinterlassen Sie mir bitte eine Nachricht mit Ihrem Namen und Ihrer Telefonnummer. <br> Ich werde Sie sobald wie möglich zurückrufen. </p>
+    </div>
+
+</section>
+<section class="sm:grid grid-cols-5 px-5p pt-10p sm:pt-5p">
+    <div class="hidden sm:flex col-span-1 text-right justify-center pt-3p">
+        <i class="fa-solid fa-envelope inline-block"></i>
+    </div>
+    <div class="col-span-4 flex flex-col justify-center">
+        <p class="text-2xl sm:text-4xl font-black pb-3p text-center sm:text-left"> Schreiben Sie mir eine Email:  </p>
+        <p class="mb-3p text-center sm:text-left"> <a href="mailto:sabrina@sabrinarees.de" class="border-b-2"> sabrina@sabrinarees.de </a> </p>
+    </div>
+</section>
+
+<section class="sm:grid grid-cols-5 px-5p pt-10p sm:pt-5p">
+    <div class="hidden sm:flex col-span-1 text-right justify-center pt-3p">
+        <i class="fa-regular fa-rectangle-list inline-block"></i>
+    </div>
+    <div class="col-span-4 flex flex-col justify-center">
+        <p class="text-2xl sm:text-4xl font-black pb-3p text-center sm:text-left"> Kontaktformular  </p>
+        <section class="max-w-screen-xl mb-10 sm:mb-0">
+                    
+            <form class="mx-auto bg-gray-100 rounded-lg">
+        
+                <div class="mb-4">
+                    <label for="name" class="block tracking-widest mb-0.6">
+                        <span class="text-[#f70000]">*</span> Name
+                    </label>
+                    <input 
+                        type="text" name="name" id="name" placeholder="" aria-label="Name"
+                        class="border py-1 px-2 w-full bg-gray-200" required />
+                </div>
+                
+                <div class="mb-4">
+                    <label for="phone" class="block tracking-widest mb-0.6">
+                        <span class="text-[#f70000]">*</span> Telefonnummer
+                    </label>
+                    <input 
+                        type="tel" name="phone" id="phone" placeholder="" aria-label="Telefonnummer"
+                        class="border py-1 px-2 w-full bg-gray-200" required />
+                </div>
+            
+                <div class="mb-4">
+                    <label for="email" class="block tracking-widest mb-0.6">
+                        E-Mail-Adresse
+                    </label>
+                    <input 
+                        type="email" name="email" id="email" placeholder="" aria-label="E-Mail-Adresse"
+                        class="border py-1 px-2 w-full bg-gray-200"/>
+                </div>
+            
+                <div class="mb-4">
+                    <label for="message" class="block tracking-widest mb-0.6">
+                        <span class="text-[#f70000]">*</span> Nachricht
+                    </label>
+                    <textarea 
+                        rows="8" name="message" id="message" placeholder=""
+                        class="border py-1 px-2 w-full bg-gray-200" required></textarea>
+                </div>
+            
+                <p> Es gilt die <span class="text-[#74a72d] border-b"> <a href="/datenschutz.html"> Datenschutzerklärung </a> </span> . </p>
+               
+                <div class="block ml-auto">
+                    <button type="submit" class="button uppercase border mt-4"> Absenden </button>
+                </div>
+            
+            </form>
+            
+            <p class="py-3p"> <strong> Hinweis: </strong> Bitte die mit <span class="text-[#f70000]"> * </span> gekennzeichneten Felder ausfüllen.  </p>
+            
+        </section>
+    </div>
+</section>
+
+
+
+<!--------Contact Form-------------->
+
+
+
+<!--------Räumlichkeiten----------->
+
+<div class="sm:pt-10p pb-10p sm:pb-5p text-center xl:pt-5p">
+    <p class="text-2xl sm:text-4xl font-black pb-3p"> Die Räumlichkeiten finden Sie hier: </p>
+
+    <p> Kortumstraße 54, 45131 Essen </p>
+
+    <div class="flex justify-center items-center google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.214145410021!2d6.997480476313994!3d51.43586101592729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8c2d9b9f423b5%3A0xbf02b187c6f4cd6f!2sKortumstra%C3%9Fe%2054%2C%2045130%20Essen%2C%20Germany!5e0!3m2!1sen!2sid!4v1700708390134!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    
+</div>
+
+<!--------Zufriedenheitsgarantie----------->
+
+<div class="px-5p pb-10p text-center">
+    <p class="text-2xl sm:text-4xl font-black pb-3p"> 100% Zufriedenheitsgarantie </p>
+
+    <div class="px-10p">
+        <p> Wenn Sie nach dem ersten Termin nicht vollends zufrieden sind, entstehen für Sie keinerlei Kosten.
+        </p>
+    </div>
+    
+    
+</div>
