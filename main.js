@@ -19,13 +19,12 @@ document.addEventListener("DOMContentLoaded", function () {
           body: new URLSearchParams(formData).toString(),
       })
           .then(() => {
-        
-              alert("Vielen Dank für Ihre Nachricht.");
-
+              console.log("Form successfully submitted");
+              myForm.reset(); // Reset the form
+              alert("Vielen Dank für Ihre Nachricht."); // Display custom thank you message
           })
           .catch((error) => alert(error));
   };
 
-  const form = document.querySelector("form[name='contact']");
-  form.addEventListener("submit", handleSubmit);
+  document.querySelector("form").addEventListener("submit", handleSubmit);
 });
