@@ -15,7 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
       fetch("/", {
           method: "POST",
-          body: formData,
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(formData).toString(),
       })
       .then(() => console.log("Form successfully submitted"))
       .catch((error) => alert(error));

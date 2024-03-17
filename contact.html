@@ -69,59 +69,28 @@ seo:
         <i class="fa-regular fa-rectangle-list inline-block"></i>
     </div>
     <div class="col-span-4 flex flex-col justify-center">
-        <p class="text-2xl sm:text-4xl font-black pb-3p text-center sm:text-left"> Kontaktformular  </p>
+        <p class="text-2xl sm:text-4xl font-black pb-3p text-center sm:text-left"> Kontaktformular </p>
         <section class="max-w-screen-xl mb-10 sm:mb-0">
-                    
             <form name="contact" method="POST" data-netlify="true" class="mx-auto bg-gray-100 rounded-lg">
-        
-                <div class="mb-4">
-                    <label for="name" class="block tracking-widest mb-0.6">
-                        <span class="text-[#f70000]">*</span> Name
-                    </label>
-                    <input 
-                        type="text" name="name" id="name" placeholder="" aria-label="Name"
-                        class="border py-1 px-2 w-full bg-gray-200" required />
-                </div>
-                
-                <div class="mb-4">
-                    <label for="phone" class="block tracking-widest mb-0.6">
-                        <span class="text-[#f70000]">*</span> Telefonnummer
-                    </label>
-                    <input 
-                        type="tel" name="phone" id="phone" placeholder="" aria-label="Telefonnummer"
-                        class="border py-1 px-2 w-full bg-gray-200" required />
-                </div>
-            
-                <div class="mb-4">
-                    <label for="email" class="block tracking-widest mb-0.6">
-                        E-Mail-Adresse
-                    </label>
-                    <input 
-                        type="email" name="email" id="email" placeholder="" aria-label="E-Mail-Adresse"
-                        class="border py-1 px-2 w-full bg-gray-200"/>
-                </div>
-            
-                <div class="mb-4">
-                    <label for="message" class="block tracking-widest mb-0.6">
-                        <span class="text-[#f70000]">*</span> Nachricht
-                    </label>
-                    <textarea 
-                        rows="8" name="message" id="message" placeholder=""
-                        class="border py-1 px-2 w-full bg-gray-200" required></textarea>
-                </div>
-
-                <input type="hidden" name="form-name" value="name_of_my_form" />
-
+                <input 
+                    type="text" name="name" id="name" placeholder="Name" aria-label="Name"
+                    class="border py-1 px-2 w-full bg-gray-200" required />
+                <input 
+                    type="tel" name="phone" id="phone" placeholder="Telefonnummer" aria-label="Telefonnummer"
+                    class="border py-1 px-2 w-full bg-gray-200" required />
+                <input 
+                    type="email" name="email" id="email" placeholder="E-Mail-Adresse" aria-label="E-Mail-Adresse"
+                    class="border py-1 px-2 w-full bg-gray-200"/>
+                <textarea 
+                    rows="8" name="message" id="message" placeholder="Nachricht"
+                    class="border py-1 px-2 w-full bg-gray-200" required></textarea>
+                <input type="hidden" name="form-name" value="contact" />
                 <p> Es gilt die <span class="text-[#74a72d] border-b"> <a href="/datenschutz.html"> Datenschutzerklärung </a> </span> . </p>
-               
                 <div class="block ml-auto">
                     <button type="submit" class="button uppercase border mt-4"> Absenden </button>
                 </div>
-            
             </form>
-            
-            <p class="py-3p"> <strong> Hinweis: </strong> Bitte die mit <span class="text-[#f70000]"> * </span> gekennzeichneten Felder ausfüllen.  </p>
-            
+            <p class="py-3p"> <strong> Hinweis: </strong> Bitte die mit <span class="text-[#f70000]"> * </span> gekennzeichneten Felder ausfüllen. </p>
         </section>
     </div>
 </section>
