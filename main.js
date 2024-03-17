@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
       .catch((error) => alert(error));
   };
 
-  document.querySelectorAll("form[data-netlify='true']").forEach(form => {
-      form.addEventListener("submit", handleSubmit);
-  });
+  const form = document.querySelector("form[name='contact']");
+  form.addEventListener("submit", handleSubmit);
 });
