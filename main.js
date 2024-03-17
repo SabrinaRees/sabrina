@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
           body: new URLSearchParams(formData).toString(),
       })
-      .then(() => console.log("Form successfully submitted"))
-      .catch((error) => alert(error));
+          .then(() => console.log("Form successfully submitted"))
+          .catch((error) => alert(error));
   };
 
   const form = document.querySelector("form[name='contact']");
