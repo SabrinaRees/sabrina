@@ -6,44 +6,6 @@ $(document).ready(function() {
 });
 
 
-document.addEventListener("DOMContentLoaded", function () {
-  const handleSubmit = (event) => {
-      event.preventDefault();
-
-      const myForm = event.target;
-      const formData = new FormData(myForm);
-
-      fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: new URLSearchParams(formData).toString(),
-      })
-          .then(() => {
-              console.log("Form successfully submitted");
-              myForm.reset(); // Reset the form
-              alert("Vielen Dank für Ihre Nachricht."); // Display custom thank you message
-          })
-          .catch((error) => alert(error));
-  };
-
-  document.querySelector("form").addEventListener("submit", handleSubmit);
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 window.cfields = [];
 window._show_thank_you = function(id, message, trackcmp_url, email) {
@@ -106,7 +68,7 @@ window._show_error = function(id, message, html) {
 };
 window._load_script = function(url, callback, isSubmit) {
     var head = document.querySelector('head'), script = document.createElement('script'), r = false;
-    var submitButton = document.querySelector('#_form_9_submit');
+    var submitButton = document.querySelector('#_form_5_submit');
     script.charset = 'utf-8';
     script.src = url;
     if (callback) {
@@ -120,9 +82,9 @@ window._load_script = function(url, callback, isSubmit) {
     script.onerror = function() {
         if (isSubmit) {
             if (script.src.length > 10000) {
-                _show_error("9", "Ihre Übermittlung konnte nicht gesendet werden. Bitte kürzen Sie Ihre Antworten und versuche es erneut.");
+                _show_error("5", "Ihre Übermittlung konnte nicht gesendet werden. Bitte kürzen Sie Ihre Antworten und versuche es erneut.");
             } else {
-                _show_error("9", "Ihre Übermittlung konnte nicht gesendet werden. Bitte versuchen Sie es erneut.");
+                _show_error("5", "Ihre Übermittlung konnte nicht gesendet werden. Bitte versuchen Sie es erneut.");
             }
             submitButton.disabled = false;
             submitButton.classList.remove('processing');
@@ -156,7 +118,7 @@ window._load_script = function(url, callback, isSubmit) {
         }
     }
     var _removed = false;
-        var form_to_submit = document.getElementById('_form_9_');
+        var form_to_submit = document.getElementById('_form_5_');
     var allInputs = form_to_submit.querySelectorAll('input, select, textarea'), tooltips = [], submitted = false;
 
     var getUrlParam = function(name) {
@@ -527,11 +489,11 @@ window._load_script = function(url, callback, isSubmit) {
         e.preventDefault();
         if (validate_form()) {
             // use this trick to get the submit button & disable it using plain javascript
-            var submitButton = e.target.querySelector('#_form_9_submit');
+            var submitButton = e.target.querySelector('#_form_5_submit');
             submitButton.disabled = true;
             submitButton.classList.add('processing');
                         var serialized = _form_serialize(
-                document.getElementById('_form_9_')
+                document.getElementById('_form_5_')
             ).replace(/%0A/g, '\\n');
             var err = form_to_submit.querySelector('._form_error');
             err ? err.parentNode.removeChild(err) : false;
@@ -563,5 +525,4 @@ window._load_script = function(url, callback, isSubmit) {
     };
     addEvent(form_to_submit, 'submit', form_submit);
 })();
-
 
